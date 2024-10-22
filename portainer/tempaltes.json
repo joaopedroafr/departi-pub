@@ -11,8 +11,8 @@
       ],
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/joaopedroafr/departi-pub/portainer",
-        "stackfile": "stacks/custom-wordpress/docker-compose.yml"
+        "url": "https://github.com/joaopedroafr/departi-pub",
+        "stackfile": "portainer/stacks/custom-wordpress/docker-compose.yml"
       },
       "env": [
         {

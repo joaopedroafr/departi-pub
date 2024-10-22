@@ -1,58 +1,58 @@
 {
-    "version": "3",
-    "templates": [
+  "version": "3",
+  "templates": [
+    {
+      "id": 1,
+      "type": 3,
+      "title": "CustomWordpress",
+      "description": "Dokku setup as a compose file",
+      "categories": [
+        "Website"
+      ],
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/joaopedroafr/departi-pub/portainer",
+        "stackfile": "stacks/custom-wordpress/docker-compose.yml"
+      },
+      "env": [
         {
-            "id": 1,
-            "type": 3,
-            "title": "CustomWordpress",
-            "description": "Dokku setup as a compose file",
-            "categories": [
-                "Website"
-            ],
-            "platform": "linux",
-            "repository": {
-                "url": "https://github.com/joaopedroafr/departi-pub/portainer",
-                "stackfile": "stacks/custom-wordpress/docker-compose.yml"
-            },
-            "env": [
-                {
-                    "name": "DOMAIN",
-                    "label": "Nome do dominio",
-                    "description": "O nome do dominio do site"
-                },
-                {
-                    "name": "SITE_NAME",
-                    "label": "Nome do site",
-                    "description": "Nome de marcação para o site usado pelo traefik"
-                },
-                {
-                    "name": "WORDPRESS_DB_HOST",
-                    "label": "Host do banco de dados",
-                    "description": "O endereço do banco de dados",
-                    "default": "db"
-                },
-                {
-                    "name": "WORDPRESS_DB_USER",
-                    "label": "Usuário do banco de dados",
-                    "description": "Usuário do banco de dados"
-                },
-                {
-                    "name": "WORDPRESS_DB_PASSWORD",
-                    "label": "Senha do banco",
-                    "description": "Senha do banco"
-                },
-                {
-                    "name": "WORDPRESS_DB_NAME",
-                    "label": "Nome do banco",
-                    "description": "Nome do banco"
-                },
-                {
-                    "name": "WORDPRESS_TABLE_PREFIX",
-                    "label": "Prefixo do banco",
-                    "description": "Prefixo do banco de dados (padrão: wp_",
-                    "default": "wp_"
-                }
-            ]
+          "name": "DOMAIN",
+          "label": "Nome do dominio",
+          "description": "O nome do dominio do site"
+        },
+        {
+          "name": "SITE_NAME",
+          "label": "Nome do site",
+          "description": "Nome de marcação para o site usado pelo traefik"
+        },
+        {
+          "name": "WORDPRESS_DB_HOST",
+          "label": "Host do banco de dados",
+          "description": "O endereço do banco de dados",
+          "default": "db"
+        },
+        {
+          "name": "WORDPRESS_DB_USER",
+          "label": "Usuário do banco de dados",
+          "description": "Usuário do banco de dados"
+        },
+        {
+          "name": "WORDPRESS_DB_PASSWORD",
+          "label": "Senha do banco",
+          "description": "Senha do banco"
+        },
+        {
+          "name": "WORDPRESS_DB_NAME",
+          "label": "Nome do banco",
+          "description": "Nome do banco"
+        },
+        {
+          "name": "WORDPRESS_TABLE_PREFIX",
+          "label": "Prefixo do banco",
+          "description": "Prefixo do banco de dados (padrão: wp_",
+          "default": "wp_"
         }
-    ]
+      ]
+    }
+  ]
 }

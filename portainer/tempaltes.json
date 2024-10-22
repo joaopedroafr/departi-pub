@@ -3,7 +3,7 @@
   "templates": [
     {
       "id": 1,
-      "type": 3,
+      "type": 2,
       "title": "CustomWordpress",
       "description": "Dokku setup as a compose file",
       "categories": [
